@@ -30,13 +30,15 @@ const questions = [
         message: 'What are the test instructions for your project?',
         name: 'tests'
     },
- /*   {
+    {
         type: 'list',
         message: 'What license did you use for your project:',
         name: 'license',
+        choices: []
         // Note to self
         // Need help with this... not sure what this really means.
-    }, */
+        // I now have an idea, just working on figuring out what license(s) should go here
+    },
     {
         type: 'input',
         message: 'What is your GitHub username?',
