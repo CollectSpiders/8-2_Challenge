@@ -34,10 +34,12 @@ const questions = [
         type: 'list',
         message: 'What license did you use for your project:',
         name: 'license',
-        choices: []
-        // Note to self
-        // Need help with this... not sure what this really means.
-        // I now have an idea, just working on figuring out what license(s) should go here
+        choices: ['GNU GPLv3', 'MIT', 'Apache License 2.0', 'ISC']
+        /* 
+            https://choosealicense.com/
+            https://choosealicense.com/community/ 
+            for some information on these options
+        */
     },
     {
         type: 'input',
