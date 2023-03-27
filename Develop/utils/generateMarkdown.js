@@ -37,7 +37,49 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-`;
+  ${renderLicenseBadge(data.license)}
+  
+  ## Description
+  
+  ${data.description}
+  
+  
+  ## Table of Contents
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributors](#contributing)
+  - [Tests](#tests)
+  - [${data.license ? 'License' : 'Contributing'}](${data.license ? '#license' : '#contributing'})
+  - [Questions](#questions)
+
+  
+  ## Installation
+  
+  ${data.installation}
+
+  
+  ## Usage
+  
+  ${data.usage}
+  
+  ${renderLicenseSection(data.license)}
+
+  
+  ## Contributing
+  
+  ${data.contributing}
+
+  
+  ## Tests
+  
+  ${data.tests}
+
+  
+  ## Questions
+  
+  For additional questions or feedback, please contact [${data.github}](${data.profileUrl}) at ${data.email}.
+  `;
 }
 
 module.exports = generateMarkdown;

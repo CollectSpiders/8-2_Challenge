@@ -17,6 +17,11 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'How would someone install your project:',
+        name: 'installation'
+    },
+    {
+        type: 'input',
         message: 'How do you use your program?',
         name: 'usage'
     },
