@@ -1,6 +1,6 @@
 /* 
-returns a badge based on which license is passed in
-if there is none, then return a empty string
+  returns a badge based on which license is passed in
+  if there is none, then return a empty string
 */ 
 function renderLicenseBadge(license) {
   if(!license){
@@ -10,8 +10,8 @@ function renderLicenseBadge(license) {
 }
 
 /* 
-returns the license link
-If there is none then return a empty string 
+  returns the license link
+  If there is none then return a empty string 
 */
 function renderLicenseLink(license) {
   if(!license){
@@ -21,8 +21,8 @@ function renderLicenseLink(license) {
 }
 
 /*
-this returns the license section of readme
-if there isn't one then return an empty string
+  this returns the license section of readme
+  if there isn't one then return an empty string
 */
 function renderLicenseSection(license) {
   if(!license){
@@ -33,7 +33,8 @@ function renderLicenseSection(license) {
   This is under the [${license}](${renderLicenseLink(license)}) license.`;
 }
 
-// TODO: Create a function to generate markdown for README
+
+// this function generates the README by inputing the key value pairs from index.js questions array
 function generateMarkdown(data) {
   return `# ${data.title}
 
